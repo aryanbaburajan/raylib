@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['tangents_0',['tangents',['../struct_mesh.html#a72f95dc8ed3a06eabc64cbc78e1070f9',1,'Mesh']]],
+  ['target_1',['target',['../struct_camera3_d.html#ae87720bc94914ae37215b5057dba2c07',1,'Camera3D::target()'],['../struct_camera2_d.html#abcb7637d3fc2b9fa851205e3ae818ff4',1,'Camera2D::target()'],['../struct_core_data.html#af8c54c4cd47b428534f1ab0fec5603ec',1,'CoreData::target()']]],
+  ['texcoords_2',['texcoords',['../struct_mesh.html#aef35063564cbbf0280e74edbed60dbaa',1,'Mesh::texcoords()'],['../structrl_vertex_buffer.html#acce92d4d10bdbadbe154b176e76a790e',1,'rlVertexBuffer::texcoords()']]],
+  ['texcoords2_3',['texcoords2',['../struct_mesh.html#a6d541d8a176a384eb2d9cc6f38547437',1,'Mesh']]],
+  ['texshapes_4',['texShapes',['../rshapes_8c.html#a219b5939c17b5700d70dcab04998e01a',1,'rshapes.c']]],
+  ['texshapesrec_5',['texShapesRec',['../rshapes_8c.html#a82118cf045e852522cd15080f8a0d5d6',1,'rshapes.c']]],
+  ['texture_6',['texture',['../struct_render_texture.html#ad2a1398929d1921971ac2b2ac76c31c9',1,'RenderTexture::texture()'],['../struct_font.html#a931f2837dbe625791fee618ef0475e66',1,'Font::texture()'],['../struct_material_map.html#ad89d26ae9df4ba66257f698935563560',1,'MaterialMap::texture()']]],
+  ['textureid_7',['textureId',['../structrl_draw_call.html#a334dbad4af67b3c0e01005bfd9ccb82e',1,'rlDrawCall']]],
+  ['time_8',['Time',['../struct_core_data.html#a062da44919f1030ed35f7b3abc505bb3',1,'CoreData']]],
+  ['title_9',['title',['../struct_core_data.html#abfdee5c01bed31c51df362246efdc629',1,'CoreData']]],
+  ['top_10',['top',['../struct_n_patch_info.html#a4548e9727bfce78ba28d47933faf850a',1,'NPatchInfo']]],
+  ['touch_11',['Touch',['../struct_core_data.html#aebac17de834beb1c34e47766b00c60c8',1,'CoreData']]],
+  ['touchaction_12',['touchAction',['../struct_gesture_event.html#a2b74620f0afd9398d93b330e3ca958d9',1,'GestureEvent']]],
+  ['transform_13',['transform',['../struct_model.html#aab39d4fe4b3b9399a24377168d6c0f0a',1,'Model']]],
+  ['translation_14',['translation',['../struct_transform.html#a3c8673f9d19d493ff81c63b8e9b72c90',1,'Transform']]],
+  ['trianglecount_15',['triangleCount',['../struct_mesh.html#aee7cdb1ea43963513f2eebaa961d9e93',1,'Mesh']]]
+];

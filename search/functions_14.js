@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['waittime_0',['WaitTime',['../raylib_8h.html#aa8360e404fa34a052c9e4f6a51c95a67',1,'WaitTime(float ms):&#160;rcore.c'],['../rcore_8c.html#ad95df4a08f3a6d14523274a57ef3d3af',1,'WaitTime(float ms):&#160;rcore.c']]],
+  ['wavecopy_1',['WaveCopy',['../raudio_8c.html#a65b567c886cf94653c76a08c8fadaaac',1,'WaveCopy(Wave wave):&#160;raudio.c'],['../raudio_8h.html#a65b567c886cf94653c76a08c8fadaaac',1,'WaveCopy(Wave wave):&#160;raudio.c'],['../raylib_8h.html#a7885ce891fe412fecb6569bad2ca1e31',1,'WaveCopy(Wave wave):&#160;raudio.c']]],
+  ['wavecrop_2',['WaveCrop',['../raudio_8c.html#a2408dd0e672fb569160870d0feeabfad',1,'WaveCrop(Wave *wave, int initSample, int finalSample):&#160;raudio.c'],['../raudio_8h.html#a2408dd0e672fb569160870d0feeabfad',1,'WaveCrop(Wave *wave, int initSample, int finalSample):&#160;raudio.c'],['../raylib_8h.html#a396f97e7b5ec405e7736ea6ea59071cb',1,'WaveCrop(Wave *wave, int initSample, int finalSample):&#160;raudio.c']]],
+  ['waveformat_3',['WaveFormat',['../raudio_8c.html#a051623062f50750e0f57a4a9a3ead471',1,'WaveFormat(Wave *wave, int sampleRate, int sampleSize, int channels):&#160;raudio.c'],['../raudio_8h.html#a051623062f50750e0f57a4a9a3ead471',1,'WaveFormat(Wave *wave, int sampleRate, int sampleSize, int channels):&#160;raudio.c'],['../raylib_8h.html#ab54edbb74d0b414c47cba9bebd106387',1,'WaveFormat(Wave *wave, int sampleRate, int sampleSize, int channels):&#160;raudio.c']]],
+  ['windowshouldclose_4',['WindowShouldClose',['../raylib_8h.html#a14dab2feeb947c7810c3b8830ffee233',1,'WindowShouldClose(void):&#160;rcore.c'],['../rcore_8c.html#a40ccb85fa8cf3f88edf924e80805d2be',1,'WindowShouldClose(void):&#160;rcore.c']]]
+];

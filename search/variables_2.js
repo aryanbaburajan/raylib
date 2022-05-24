@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['callback_0',['callback',['../structr_audio_buffer.html#a3604e8a909142fba55c4a340933643e0',1,'rAudioBuffer']]],
+  ['channels_1',['channels',['../struct_audio_data.html#a789e452513872d4880fe21e01492e5df',1,'AudioData::channels()'],['../struct_wave.html#aaceb64fdf8658e825b216889525ca723',1,'Wave::channels()'],['../struct_audio_stream.html#adb01528b0f10468546a88219e732c857',1,'AudioStream::channels()']]],
+  ['charpressedqueue_2',['charPressedQueue',['../struct_core_data.html#ade97b471e413baa7a82b60dafe793daf',1,'CoreData']]],
+  ['charpressedqueuecount_3',['charPressedQueueCount',['../struct_core_data.html#a61f03bf0fb84cfd814acbc5c788ba650',1,'CoreData']]],
+  ['chromaabcorrection_4',['chromaAbCorrection',['../struct_vr_device_info.html#a86a77833c734a66aecb6a0a45483b448',1,'VrDeviceInfo']]],
+  ['color_5',['color',['../struct_material_map.html#a0e3279b8e645bff03940a4dd3f100dfe',1,'MaterialMap']]],
+  ['colors_6',['colors',['../struct_mesh.html#af2aba3e21877db6c5da15052afea9e1e',1,'Mesh::colors()'],['../structrl_vertex_buffer.html#aece682f54d69368e7b41320959ac42ad',1,'rlVertexBuffer::colors()']]],
+  ['context_7',['context',['../struct_audio_data.html#a3bc8e174599f4d3b44dd9dca7e2bbf98',1,'AudioData']]],
+  ['converter_8',['converter',['../structr_audio_buffer.html#aeaa0db783d743e43157ff73b8de0ff1a',1,'rAudioBuffer']]],
+  ['ctxdata_9',['ctxData',['../struct_music.html#abab57b7d219c59ef3812d2813cd98ae8',1,'Music']]],
+  ['ctxtype_10',['ctxType',['../struct_music.html#adbef476e58c36ed575d38acfcde8ecfd',1,'Music']]],
+  ['current_11',['current',['../struct_core_data.html#ae034c6b85e92e54a87c49350377a4f8c',1,'CoreData']]],
+  ['currentbuffer_12',['currentBuffer',['../structrl_render_batch.html#af8fff77dd3827a45e5dd741d6b93706f',1,'rlRenderBatch']]],
+  ['currentbuttonstate_13',['currentButtonState',['../struct_core_data.html#a0696e2527e142547c45e63058cadb869',1,'CoreData']]],
+  ['currentdepth_14',['currentDepth',['../structrl_render_batch.html#a6a7116cd48ac8660a7d8aee366f152ce',1,'rlRenderBatch']]],
+  ['currentfbo_15',['currentFbo',['../struct_core_data.html#add90aa1d3e67c5244eb02e4d16e4f29c',1,'CoreData']]],
+  ['currentkeystate_16',['currentKeyState',['../struct_core_data.html#a844212ed800507f7000cdd2e93930b2e',1,'CoreData']]],
+  ['currentposition_17',['currentPosition',['../struct_core_data.html#ae23bca1165be2478ad29f04bd394e5ae',1,'CoreData']]],
+  ['currenttouchstate_18',['currentTouchState',['../struct_core_data.html#a43d8cafb85f56385313f26611f03b57c',1,'CoreData']]],
+  ['currentwheelmove_19',['currentWheelMove',['../struct_core_data.html#abd6487b5a8178c5df4731f5fd422e8f8',1,'CoreData']]],
+  ['cursor_20',['cursor',['../struct_core_data.html#a772524533d2a00a79acfffa4b60d419a',1,'CoreData']]],
+  ['cursorhidden_21',['cursorHidden',['../struct_core_data.html#ad5c693f382b684a0ca9abfd0b75cb470',1,'CoreData']]],
+  ['cursoronscreen_22',['cursorOnScreen',['../struct_core_data.html#a5aa2d474d56bea8660c09f441ba3bda9',1,'CoreData']]]
+];
