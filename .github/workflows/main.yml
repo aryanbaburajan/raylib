@@ -20,12 +20,12 @@ jobs:
         shell: bash
 
       - name: Generate Doxygen Documentation
-        run: doxygen ${{ inputs.config_file }}
+        run: doxygen .
         shell: bash
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ gh-pages }}
-          folder: ${{ ./docs/html }}
+          branch: gh-pages
+          folder: ./docs/html
