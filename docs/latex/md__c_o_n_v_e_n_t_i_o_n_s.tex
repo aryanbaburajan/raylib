@@ -1,0 +1,112 @@
+Here it is a list with some of the code conventions used by raylib\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Code element   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Convention   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Example    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Code element   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Convention   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Example    }\\\cline{1-3}
+\endhead
+Defines   &\PBS\centering ALL\+\_\+\+CAPS   &{\ttfamily \#define PLATFORM\+\_\+\+DESKTOP}    \\\cline{1-3}
+Macros   &\PBS\centering ALL\+\_\+\+CAPS   &{\ttfamily \#define MIN(a,b) (((a)\texorpdfstring{$<$}{<}(b))?(a)\+:(b))}    \\\cline{1-3}
+Variables   &\PBS\centering lower\+Case   &{\ttfamily int screen\+Width = 0;}, {\ttfamily float target\+Frame\+Time = 0.\+016f;}    \\\cline{1-3}
+Local variables   &\PBS\centering lower\+Case   &{\ttfamily Vector2 player\+Position = \{ 0 \};}    \\\cline{1-3}
+Global variables   &\PBS\centering lower\+Case   &{\ttfamily bool window\+Ready = false;}    \\\cline{1-3}
+Constants   &\PBS\centering lower\+Case   &{\ttfamily const int max\+Value = 8;}    \\\cline{1-3}
+Pointers   &\PBS\centering My\+Type $\ast$pointer   &{\ttfamily Texture2D $\ast$array = NULL;}    \\\cline{1-3}
+float values   &\PBS\centering always x.\+xf   &{\ttfamily float gravity = 10.\+0f}    \\\cline{1-3}
+Operators   &\PBS\centering value1$\ast$value2   &{\ttfamily int product = value$\ast$6;}    \\\cline{1-3}
+Operators   &\PBS\centering value1/value2   &{\ttfamily int division = value/4;}    \\\cline{1-3}
+Operators   &\PBS\centering value1 + value2   &{\ttfamily int sum = value + 10;}    \\\cline{1-3}
+Operators   &\PBS\centering value1 -\/ value2   &{\ttfamily int res = value -\/ 5;}    \\\cline{1-3}
+Enum   &\PBS\centering Title\+Case   &{\ttfamily enum Texture\+Format}    \\\cline{1-3}
+Enum members   &\PBS\centering ALL\+\_\+\+CAPS   &{\ttfamily PIXELFORMAT\+\_\+\+UNCOMPRESSED\+\_\+\+R8\+G8\+B8}    \\\cline{1-3}
+Struct   &\PBS\centering Title\+Case   &{\ttfamily struct Texture2D}, {\ttfamily struct Material}    \\\cline{1-3}
+Struct members   &\PBS\centering lower\+Case   &{\ttfamily texture.\+width}, {\ttfamily color.\+r}    \\\cline{1-3}
+Functions   &\PBS\centering Title\+Case   &{\ttfamily Init\+Window()}, {\ttfamily Load\+Image\+From\+Memory()}    \\\cline{1-3}
+Functions params   &\PBS\centering lower\+Case   &{\ttfamily width}, {\ttfamily height}    \\\cline{1-3}
+Ternary Operator   &\PBS\centering (condition)? result1 \+: result2   &{\ttfamily printf(\char`\"{}\+Value is 0\+: \%s\char`\"{}, (value == 0)? \char`\"{}yes\char`\"{} \+: \char`\"{}no\char`\"{});}   \\\cline{1-3}
+\end{longtabu}
+
+
+Some other conventions to follow\+:
+\begin{DoxyItemize}
+\item {\bfseries{ALWAYS}} initialize all defined variables.
+\item {\bfseries{Do not use TABS}}, use 4 spaces instead.
+\item Avoid trailing spaces, please, avoid them
+\item Control flow statements always are followed {\bfseries{by a space}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (condition) value = 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{while} (!WindowShouldClose())}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NUM\_VALUES; i++) printf(\textcolor{stringliteral}{"{}\%i"{}}, i);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Be careful with the switch formatting!}}
+\DoxyCodeLine{\textcolor{keywordflow}{switch} (value)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{break};}
+\DoxyCodeLine{    \textcolor{keywordflow}{case} 2: \textcolor{keywordflow}{break};}
+\DoxyCodeLine{    \textcolor{keywordflow}{default}: \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\item All conditions checks are {\bfseries{always between parenthesis}} but not boolean values\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ((value > 1) \&\& (value < 50) \&\& valueActive))}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\item When dealing with braces or curly brackets, open-\/close them in aligned mode\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} SomeFunction()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{   \textcolor{comment}{// TODO: Do something here!}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+{\bfseries{If proposing new functions, please try to use a clear naming for function-\/name and functions-\/parameters, in case of doubt, open an issue for discussion.}}\hypertarget{md__c_o_n_v_e_n_t_i_o_n_s_autotoc_md15}{}\doxysection{Files and Directories Naming Conventions}\label{md__c_o_n_v_e_n_t_i_o_n_s_autotoc_md15}
+
+\begin{DoxyItemize}
+\item Directories will be named using {\ttfamily snake\+\_\+case}\+: {\ttfamily resources/models}, {\ttfamily resources/fonts}
+\item Files will be named using {\ttfamily snake\+\_\+case}\+: {\ttfamily main\+\_\+title.\+png}, {\ttfamily cubicmap.\+png}, {\ttfamily sound.\+wav}
+\end{DoxyItemize}
+
+{\itshape NOTE\+: Avoid any space or special character in the files/dir naming!}\hypertarget{md__c_o_n_v_e_n_t_i_o_n_s_autotoc_md16}{}\doxysection{Games/\+Examples Directories Organization Conventions}\label{md__c_o_n_v_e_n_t_i_o_n_s_autotoc_md16}
+
+\begin{DoxyItemize}
+\item Data files should be organized by context and usage in the game, think about the loading requirements for data and put all the resources that need to be loaded at the same time together.
+\item Use descriptive names for the files, it would be perfect if just reading the name of the file, it was possible to know what is that file and where fits in the game.
+\item Here it is an example, note that some resources require to be loaded all at once while other require to be loaded only at initialization (gui, font).
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{resources/audio/fx/long\_jump.wav}
+\DoxyCodeLine{resources/audio/music/main\_theme.ogg}
+\DoxyCodeLine{resources/screens/logo/logo.png}
+\DoxyCodeLine{resources/screens/title/title.png}
+\DoxyCodeLine{resources/screens/gameplay/background.png}
+\DoxyCodeLine{resources/characters/player.png}
+\DoxyCodeLine{resources/characters/enemy\_slime.png}
+\DoxyCodeLine{resources/common/font\_arial.ttf}
+\DoxyCodeLine{resources/common/gui.png}
+
+\end{DoxyCode}
+ 

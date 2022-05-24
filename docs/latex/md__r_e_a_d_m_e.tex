@@ -1,0 +1,117 @@
+
+
+{\bfseries{raylib is a simple and easy-\/to-\/use library to enjoy videogames programming.}}
+
+raylib is highly inspired by Borland BGI graphics lib and by XNA framework and it\textquotesingle{}s specially well suited for prototyping, tooling, graphical applications, embedded systems and education.
+
+{\itshape NOTE for ADVENTURERS\+: raylib is a programming library to enjoy videogames programming; no fancy interface, no visual helpers, no debug button... just coding in the most pure spartan-\/programmers way.}
+
+Ready to learn? Jump to \href{https://www.raylib.com/examples.html}{\texttt{ code examples!}}
+
+\DoxyHorRuler{0}
+
+
+~\newline
+
+
+\href{https://github.com/raysan5/raylib/graphs/contributors}{\texttt{ }} \href{https://github.com/raysan5/raylib/releases}{\texttt{ }} \href{https://github.com/raysan5/raylib/stargazers}{\texttt{ }} \href{https://github.com/raysan5/raylib/commits/master}{\texttt{ }} \href{https://repology.org/project/raylib/versions}{\texttt{ }} \mbox{[}\mbox{]}(LICENSE)
+
+\href{https://discord.gg/raylib}{\texttt{ }} \href{https://www.reddit.com/r/raylib/}{\texttt{ }} \href{https://www.youtube.com/c/raylib}{\texttt{ }} \href{https://www.twitch.tv/raysan5}{\texttt{ }} \href{https://twitter.com/raysan5}{\texttt{ }}
+
+\href{https://github.com/raysan5/raylib/actions?query=workflow\%3AWindows}{\texttt{ }} \href{https://github.com/raysan5/raylib/actions?query=workflow\%3ALinux}{\texttt{ }} \href{https://github.com/raysan5/raylib/actions?query=workflow\%3AmacOS}{\texttt{ }} \href{https://github.com/raysan5/raylib/actions?query=workflow\%3AAndroid}{\texttt{ }} \href{https://github.com/raysan5/raylib/actions?query=workflow\%3AWebAssembly}{\texttt{ }}
+
+\href{https://github.com/raysan5/raylib/actions?query=workflow\%3ACMakeBuilds}{\texttt{ }} \href{https://github.com/raysan5/raylib/actions/workflows/windows_examples.yml}{\texttt{ }} \href{https://github.com/raysan5/raylib/actions/workflows/linux_examples.yml}{\texttt{ }}\hypertarget{md__r_e_a_d_m_e_autotoc_md33}{}\doxysubsection{features}\label{md__r_e_a_d_m_e_autotoc_md33}
+
+\begin{DoxyItemize}
+\item {\bfseries{NO external dependencies}}, all required libraries are \href{https://github.com/raysan5/raylib/tree/master/src/external}{\texttt{ bundled into raylib}}
+\item Multiple platforms supported\+: {\bfseries{Windows, Linux, Mac\+OS, RPI, Android, HTML5... and more!}}
+\item Written in plain C code (C99) in Pascal\+Case/camel\+Case notation
+\item Hardware accelerated with Open\+GL ({\bfseries{1.\+1, 2.\+1, 3.\+3, 4.\+3 or ES 2.\+0}})
+\item {\bfseries{Unique Open\+GL abstraction layer}} (usable as standalone module)\+: \href{https://github.com/raysan5/raylib/blob/master/src/rlgl.h}{\texttt{ rlgl}}
+\item Multiple {\bfseries{Fonts}} formats supported (TTF, XNA fonts, Angel\+Code fonts)
+\item Multiple texture formats supported, including {\bfseries{compressed formats}} (DXT, ETC, ASTC)
+\item {\bfseries{Full 3D support}}, including 3D Shapes, Models, Billboards, Heightmaps and more!
+\item Flexible Materials system, supporting classic maps and {\bfseries{PBR maps}}
+\item {\bfseries{Animated 3D models}} supported (skeletal bones animation) (IQM)
+\item Shaders support, including model and {\bfseries{postprocessing}} shaders.
+\item {\bfseries{Powerful math module}} for Vector, Matrix and Quaternion operations\+: \href{https://github.com/raysan5/raylib/blob/master/src/raymath.h}{\texttt{ raymath}}
+\item Audio loading and playing with streaming support (WAV, OGG, MP3, FLAC, XM, MOD)
+\item {\bfseries{VR stereo rendering}} support with configurable HMD device parameters
+\item Huge examples collection with \href{https://github.com/raysan5/raylib/tree/master/examples}{\texttt{ +120 code examples}}!
+\item Bindings to \href{https://github.com/raysan5/raylib/blob/master/BINDINGS.md}{\texttt{ +50 programming languages}}!
+\item {\bfseries{Free and open source}}.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md34}{}\doxysubsection{basic example}\label{md__r_e_a_d_m_e_autotoc_md34}
+This is a basic raylib example, it creates a window and it draws the text {\ttfamily \char`\"{}\+Congrats! You created your first window!\char`\"{}} in the middle of the screen. Check this example \href{https://www.raylib.com/examples/core/loader.html?name=core_basic_window}{\texttt{ running live on web here}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}raylib.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    InitWindow(800, 450, \textcolor{stringliteral}{"{}raylib [core] example -\/ basic window"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{while} (!WindowShouldClose())}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        BeginDrawing();}
+\DoxyCodeLine{            ClearBackground(RAYWHITE);}
+\DoxyCodeLine{            DrawText(\textcolor{stringliteral}{"{}Congrats! You created your first window!"{}}, 190, 200, 20, LIGHTGRAY);}
+\DoxyCodeLine{        EndDrawing();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    CloseWindow();}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md35}{}\doxysubsection{build and installation}\label{md__r_e_a_d_m_e_autotoc_md35}
+raylib binary releases for Windows, Linux, mac\+OS, Android and HTML5 are available at the \href{https://github.com/raysan5/raylib/releases}{\texttt{ Github Releases page}}.
+
+raylib is also available via multiple \href{https://github.com/raysan5/raylib/issues/613}{\texttt{ package managers}} on multiple OS distributions.\hypertarget{md__r_e_a_d_m_e_autotoc_md36}{}\doxyparagraph{Installing and building raylib on multiple platforms}\label{md__r_e_a_d_m_e_autotoc_md36}
+\href{https://github.com/raysan5/raylib/wiki\#development-platforms}{\texttt{ raylib Wiki}} contains detailed instructions on building and usage on multiple platforms.
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/raysan5/raylib/wiki/Working-on-Windows}{\texttt{ Working on Windows}}
+\item \href{https://github.com/raysan5/raylib/wiki/Working-on-macOS}{\texttt{ Working on mac\+OS}}
+\item \href{https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux}{\texttt{ Working on GNU Linux}}
+\item \href{https://github.com/raysan5/raylib/wiki/Working-on-Chrome-OS}{\texttt{ Working on Chrome OS}}
+\item \href{https://github.com/raysan5/raylib/wiki/Working-on-FreeBSD}{\texttt{ Working on Free\+BSD}}
+\item \href{https://github.com/raysan5/raylib/wiki/Working-on-Raspberry-Pi}{\texttt{ Working on Raspberry Pi}}
+\item \href{https://github.com/raysan5/raylib/wiki/Working-for-Android}{\texttt{ Working for Android}}
+\item \href{https://github.com/raysan5/raylib/wiki/Working-for-Web-(HTML5)}{\texttt{ Working for Web (HTML5)}}
+\item \href{https://github.com/raysan5/raylib/wiki/Working-with-CMake}{\texttt{ Working anywhere with CMake}}
+\end{DoxyItemize}
+
+{\itshape Note that Wiki is open for edit, if you find some issue while building raylib for your target platform, feel free to edit the Wiki or open and issue related to it.}\hypertarget{md__r_e_a_d_m_e_autotoc_md37}{}\doxyparagraph{Setup raylib with multiple IDEs}\label{md__r_e_a_d_m_e_autotoc_md37}
+raylib has been developed on Windows platform using \href{https://notepad-plus-plus.org/}{\texttt{ Notepad++}} and \href{https://www.mingw-w64.org/}{\texttt{ Min\+GW GCC}} compiler but it can be used with other IDEs on multiple platforms.
+
+\href{https://github.com/raysan5/raylib/tree/master/projects}{\texttt{ Projects directory}} contains several ready-\/to-\/use {\bfseries{project templates}} to build raylib and code examples with multiple IDEs.
+
+{\itshape Note that there are lots of IDEs supported, some of the provided templates could require some review, please, if you find some issue with some template or you think they could be improved, feel free to send a PR or open a related issue.}\hypertarget{md__r_e_a_d_m_e_autotoc_md38}{}\doxysubsection{learning and docs}\label{md__r_e_a_d_m_e_autotoc_md38}
+raylib is designed to be learned using \href{https://github.com/raysan5/raylib/tree/master/examples}{\texttt{ the examples}} as the main reference. There is no standard API documentation but there is a \href{https://www.raylib.com/cheatsheet/cheatsheet.html}{\texttt{ {\bfseries{cheatsheet}}}} containing all the functions available on the library and a short description of each one of them, input parameters and result value names should be intuitive enough to understand how each function works.
+
+Some additional documentation about raylib design can be found in raylib Git\+Hub Wiki. Here the more relevant links\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://www.raylib.com/cheatsheet/cheatsheet.html}{\texttt{ raylib cheatsheet}}
+\item \href{https://github.com/raysan5/raylib/wiki/raylib-architecture}{\texttt{ raylib architecture}}
+\item \href{https://github.com/raysan5/raylib/wiki}{\texttt{ raylib library design}}
+\item \href{https://github.com/raysan5/raylib/tree/master/examples}{\texttt{ raylib examples collection}}
+\item \href{https://github.com/raysan5/raylib-games}{\texttt{ raylib games collection}}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md39}{}\doxysubsection{contact and networks}\label{md__r_e_a_d_m_e_autotoc_md39}
+raylib is present in several networks and raylib community is growing everyday. If you are using raylib and enjoying it, feel free to join us in any of these networks. The most active network is our \href{https://discord.gg/raylib}{\texttt{ Discord server}}! \+:)
+
+
+\begin{DoxyItemize}
+\item Webpage\+: \href{https://www.raylib.com}{\texttt{ https\+://www.\+raylib.\+com}}
+\item Discord\+: \href{https://discord.gg/raylib}{\texttt{ https\+://discord.\+gg/raylib}}
+\item Twitter\+: \href{https://www.twitter.com/raysan5}{\texttt{ https\+://www.\+twitter.\+com/raysan5}}
+\item Twitch\+: \href{https://www.twitch.tv/raysan5}{\texttt{ https\+://www.\+twitch.\+tv/raysan5}}
+\item Reddit\+: \href{https://www.reddit.com/r/raylib}{\texttt{ https\+://www.\+reddit.\+com/r/raylib}}
+\item Patreon\+: \href{https://www.patreon.com/raylib}{\texttt{ https\+://www.\+patreon.\+com/raylib}}
+\item You\+Tube\+: \href{https://www.youtube.com/c/raylib}{\texttt{ https\+://www.\+youtube.\+com/channel/raylib}}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md40}{}\doxysubsection{license}\label{md__r_e_a_d_m_e_autotoc_md40}
+raylib is licensed under an unmodified zlib/libpng license, which is an OSI-\/certified, BSD-\/like license that allows static linking with closed source software. Check \mbox{[}LICENSE\mbox{]}(LICENSE) for further details.
+
+raylib uses internally some libraries for window/graphics/inputs management and also to support different fileformats loading, all those libraries are embedded with and are available in \href{https://github.com/raysan5/raylib/tree/master/src/external}{\texttt{ src/external}} directory. Check \href{https://github.com/raysan5/raylib/wiki/raylib-dependencies}{\texttt{ raylib dependencies LICENSES}} on raylib Wiki for details. 
