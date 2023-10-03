@@ -3,6 +3,6 @@
 
 # Raylib is a simple and easy-to-use library to enjoy videogames programming.
 
-I personally did not like the fact that raylib despite being a very popular library, did not have an in-depth documentation. So I decided to write and host it myself. [Here is the documentation](https://aryanbaburajan.github.io/raylib-docs/)
+Despite being a very popular library, Raylib lacked a full API documentation. [So I decided to write and host it myself.](https://aryanbaburajan.github.io/raylib-docs/)
 
-NOTE: I do NOT own the raylib trademark.
+*NOTE: I do not own the raylib trademark. All rights goes to the respective owners and contributors.*
